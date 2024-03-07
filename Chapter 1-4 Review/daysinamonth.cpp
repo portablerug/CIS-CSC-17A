@@ -31,7 +31,7 @@ int main() {
         cin >> year;
     }
 
-    switch (year){
+    switch (numMnth){
         case 1: numDys = 31;
         case 2: numDys = 28;
         case 3: numDys = 31;
@@ -46,8 +46,9 @@ int main() {
         case 12: numDys = 31;
     }
 
+
     //Display the output
-    
+    cout << numDys << "days"<<endl;
     //Exit the program
     return 0;
 }
