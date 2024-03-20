@@ -1,0 +1,8 @@
+Array Element Address Calculation: 
+
+address = base_address + index_number * element_data_type_size
+
+base_address: beggining address of the array (is what cout prints with the array name)
+index_number: the element index or subscript
+element_data_type_size: the size of the element data type in bytes
+^eg. char = 1, short int = 2, int = 4, float = 4, double = 8
