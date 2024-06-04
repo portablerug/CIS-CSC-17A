@@ -1,0 +1,18 @@
+OOP Project ideas:
+
+    - Dealership
+        - Has all types of cars (memebrs)
+        - Differnt cars like trucks, SUV's, Coupes, Minivans etc.
+        - Tire size, Year, Model, Color, Seats, Radio or not, Cameras, 
+
+    - Payroll FOR DOMINOS (used)
+        - Employee information
+        - GRoss pay (has its own stuff)
+        - SSN,First and Last name
+        - Address
+        - Mileage if a delivery person
+        -
+
+    - Bank??
+        - Address, First and Last names,
+        - total money
