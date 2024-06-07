@@ -74,6 +74,15 @@ public:
             cout<< Name << " sorry, no promotion." << endl;
         }
     }
+
+    //Polymorphism
+    //Make virtual (when it is invoked, it says to check for impelmentation of derived classes and uses that instead)
+    virtual void Work(){
+        cout<< Name << " is checking emial, task backlog, performing tasks" << endl; 
+    }
+
+
+
 };
 
 //Making this class inherit from class above
@@ -93,6 +102,11 @@ public:
     void fixBug(){
         cout<< Name << " fixed bug using " << favLanguage << endl;
     }
+
+    //Polymorphism
+    void Work(){
+        cout<< Name << " is programming in " << favLanguage << endl; 
+    }
 };
 
 class Teacher: public Employee{
@@ -106,15 +120,27 @@ public:
             :Employee(name, company, age){
                 subject = teachSubject;
     }
+
+    //Polymorphism
+    void Work(){
+        cout<< Name << " is teaching " << subject <<endl; 
+    }
 };
 
 int main(){
-
-    //Creating Object of Class Developer
+    //The most common use of polymorphism is when a parent class
+    //reference is used to refer to a child class object
     Developer dev1=Developer("John", "Elite Mind", 24, "Python") ;
     Teacher teach1 = Teacher("Leah", "Novi", 28, "Calculus");
-    teach1.PrepareLesson();
-    teach1.AskForPromotion();
+
+    //Pointer
+    Employee *e1 =&dev1; //Holding reference to derived class object
+    Employee *e2 =&teach1;
+
+    //Dereferencing
+    e1->Work();
+    e2->Work();
+
     //Exit
     return 0;
 }

@@ -11,7 +11,6 @@ protected:
     string model;
     int year;
     double price;
-
 public:
     // Constructor
     JapaneseCar(string b, string m, int y, double p)
@@ -22,7 +21,6 @@ public:
         cout << "Brand: " << brand << "\nModel: " << model
                   << "\nYear: " << year << "\nPrice: $" << price << endl;
     }
-
     // Virtual destructor
     virtual ~JapaneseCar() {}
 };
