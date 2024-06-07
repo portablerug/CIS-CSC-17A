@@ -6,8 +6,15 @@ using namespace std;
 //Idea of Encapsulation is to make the "private" propreties hidden and can only be accessed through the methods of get and set.
 
 //Classes 
-class Employee{
-//Access modifier, Setting to public lets us see and use the properties
+//In this scenerio, the employee wants a payraise and this class will act as their contract
+class AbstractEmployee{
+    //Will make it obligatory to implement this "contract"
+    virtual void AskForPromotion() = 0;
+};
+
+
+//Allowing for employee to "sign" contract
+class Employee:AbstractEmployee {
 //Ecapsulating these three properties
 private: 
     //Members are attributes and behaviors
@@ -59,6 +66,15 @@ public:
         Company = company;
         Age = age;
     }
+
+    //Implemnting the "promotion"
+    virtual void AskForPromotion(){
+        if(Age > 30){
+            cout<< Name << " got promoted!" << endl;
+        }else{
+            cout<< Name << " sorry, no promotion." << endl;
+        }
+    }
 };
 
 int main(){
@@ -67,17 +83,11 @@ int main(){
     //Using user defined variable
     Employee employee1 = Employee("Miguel", "Microsoft", 20); //Construtor is called and its arguments passed in are the values set to the variables.
     cout << endl;
-    employee1.Introduction();
-
-
     //Creating another employee profile
-    Employee employee2 = Employee("Andrea", "Googel", 19); //Constructor passed in
-    cout << endl;
-    employee2.Introduction();
+    Employee employee2 = Employee("Andrea", "Google", 19); //Constructor passed in
 
-    //Testing Getter and Setter functions
-    employee1.setAge(17); //Age is less than 18 so it age will not be set.
-    cout<< employee1.getName() << " is " << employee1.getAge() << " years old" << endl;
+    employee1.AskForPromotion();
+    employee2.AskForPromotion();
 
     //Exit
     return 0;

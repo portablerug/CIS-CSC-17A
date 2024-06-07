@@ -24,7 +24,20 @@ Encapsulation:
     - Provides a way for classes to interact with our data. 
     - Through its methods you access data
 
+Abstraction:
+    - Hiding complex things behidn a procedure that makes those things look simple for the users
+    - Is used by another class and is implemented inside that class as well.
 
+Inheritance: 
+    - A class like a car will have methods like drive,  
+    - Derived car like electric cars, gas car, sport car
+    - Electric car will have a method called charge, attribute with charge level
+    - Gas car will have method called tank (fueling) attribute with tank status
+    - 
+
+Polymorphism (many forms)
+    - Used when a parent class refrence is used to refer to an object of a child class
+    - 
 
 
 
