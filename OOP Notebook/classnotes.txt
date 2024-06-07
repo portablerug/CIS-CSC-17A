@@ -1,0 +1,31 @@
+Classes
+    ex:  storing an entire user in the variable
+    - Name ,weight, hair color
+    - These variables are variables
+    - Each object of a class has its own copy of the class's member variables 
+
+
+Constructors: 
+    - A spcial type of method that is invoked ewach time that an object of a class is createad. 
+    - Default constructor is waht is given by your computer on its own if values are not specified. 
+    - Does not have a return type
+    - Constructor has the same name as the Class and MUST BE PUBLIC (might sometimes be private)
+    ex: commenting out the attricbutes from the object in the main function and passing them into the constructor of the object
+
+4 Main Pillers or Object Oriented Programming: 
+    - Encapsulation
+    - Abstraction
+    - Inheritance
+    - Polymorphism
+
+Encapsulation:
+    - Bundeling data and grouping it together
+    - Prevent anyone oranything outside of ourt class to modify or interact with it. (not directly)
+    - Provides a way for classes to interact with our data. 
+    - Through its methods you access data
+
+
+
+
+
+
